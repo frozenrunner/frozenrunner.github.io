@@ -29,6 +29,6 @@ jobs:
           npm run prod
       
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+      - uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: .
