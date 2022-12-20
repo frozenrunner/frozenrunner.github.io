@@ -27,6 +27,8 @@ module.exports = {
                 return "./css/[name].css";
             }
         }),
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin({
+          template: "index.html"
+        })
     ]
 }
