@@ -1,0 +1,37 @@
+.card-section {
+    background: var(--grey-5);
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    @include box-shadow(0);
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 5em 3fr;
+    grid-template-rows: 5em 3fr;
+    padding: 1rem;
+    width: 1024px;
+
+    h1, p {
+        padding: 0 0 0 1rem;
+    }    
+}
+
+.card-image {
+    align-self: center;
+    grid-column-start: 1;
+    justify-self: center;
+    width: 4.6875em;
+}
+
+.card-title {
+    border-bottom: 1px solid var(--grey-3);
+    border-left: 1px solid var(--grey-3);
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+.card-content {
+    border-left: 1px solid var(--grey-3);
+    grid-row-start: 2;
+    grid-column-start: 2;
+    margin: -1px 0 0;
+}

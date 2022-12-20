@@ -1,2 +1,3 @@
+import "./components/card";
 //SASS
-require("./styles/main.scss");
+import "./styles/main.scss";

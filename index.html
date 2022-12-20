@@ -8,8 +8,25 @@
     <link rel="icon" href="./img/favicon.png" type="image/png"/>
 </head>
 <body>
-    <main class="main">
-        <img src="./img/profile.jpg" alt="Michael Horlick's profile picture" class="img-profile"/>
-    </main>
+    <template id="card">
+        <link href="./css/main.css" rel="stylesheet">
+        <section class="card-section">
+            <img class="card-image"/>
+            <h1 class="card-title"><slot name="card-title"></slot></h1>
+            <p class="card-content"><slot name="card-content"></slot></p>
+        </section>
+    </template>
+    <site-card img="./img/profile.jpg">
+        <span slot="card-title">Michael Horlick</span>
+        <span slot="card-content">Some Content</span>
+    </site-card>
+    <site-card img="./img/cc.svg">
+        <span slot="card-title">Carfax Canada</span>
+        <span slot="card-content">Work History and Responsibilities</span>
+    </site-card>
+    <site-card img="./img/erth.webp">
+        <span slot="card-title">ERTH Corp</span>
+        <span slot="card-content">Work History and Responsibilities</span>
+    </site-card>
 </body>
 </html>
