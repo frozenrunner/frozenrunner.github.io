@@ -28,7 +28,5 @@ jobs:
           npm ci
           npm run prod
       
-      - name: Deploy 🚀
-      - uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          folder: .
+      - name: Deploy GitHub Pages site
+        uses: actions/deploy-pages@v1.2.3
