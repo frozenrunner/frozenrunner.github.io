@@ -1,0 +1,22 @@
+@mixin box-shadow($level) {
+    $shadowColour: hsla(0,0%,0%,.2);
+    @if $level == 0 {
+        box-shadow: 0 1px 3px $shadowColour;
+    }
+
+    @if $level == 1 {
+        box-shadow: 0 4px 6px $shadowColour;
+    }
+
+    @if $level == 2 {
+        box-shadow: 0 5px 15px $shadowColour;
+    }
+
+    @if $level == 3 {
+        box-shadow: 0 10px 24px $shadowColour;
+    }
+
+    @if $level == 4 {
+        box-shadow: 0 15px 35px $shadowColour;
+    }
+}
