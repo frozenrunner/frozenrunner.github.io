@@ -1,0 +1,32 @@
+{
+  "name": "frozenrunner.github.io",
+  "version": "1.0.0",
+  "description": "GitHub pages repo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config webpack.dev.js",
+    "prod": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frozenrunner/frozenrunner.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frozenrunner/frozenrunner.github.io/issues"
+  },
+  "homepage": "https://github.com/frozenrunner/frozenrunner.github.io#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "mini-css-extract-plugin": "^2.7.2",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
