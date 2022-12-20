@@ -6,12 +6,20 @@
     --grey-5: #d6d6d6;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
 body {
-    align-items: center;
     background-color: #fff;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 1rem;
 }
 
 h1, p {
@@ -21,7 +29,9 @@ h1, p {
 .main {
     display: flex;
     flex-flow: column nowrap;
+    height: 100%;
 }
+
 
 site-card:not(:last-child) {
     margin: 0 0 1rem;
