@@ -34,7 +34,6 @@ module.exports = {
         }),
         new CopyWebpackPlugin({
           patterns: [
-            {from: "./src/pages/shoetracker", to: "./shoetracker"},
             {from: "./src/img/", to: "./img/"},
             {from: "./src/fonts/", to: "./fonts/"}
           ]
