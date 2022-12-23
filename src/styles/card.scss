@@ -5,8 +5,8 @@
     @include box-shadow(0);
     display: grid;
     gap: 1px;
-    grid-template-columns: 5em 3fr;
-    grid-template-rows: 5em 3fr;
+    grid-template-columns: minmax(5rem, 8rem) 6fr;
+    grid-template-rows: minmax(5rem, 8rem) 3fr;
     padding: 2rem;
 
     .card-content {
@@ -20,16 +20,20 @@
 }
 
 .card-image {
-    align-self: center;
-    grid-column-start: 1;
-    justify-self: center;
     width: 4.6875em;
 }
 
+.card-image-container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 .card-title {
+    align-items: center;
     border-bottom: 1px solid var(--grey-5);
     border-left: 1px solid var(--grey-5);
-    display: block;
+    display: flex;
     grid-column-start: 2;
     grid-row-start: 1;
     padding: 1rem 0 0 1rem;
@@ -37,6 +41,7 @@
 
 .card-history {
     display: flex;
+    flex: 1 1 auto;
     justify-content: space-between;
 }
 

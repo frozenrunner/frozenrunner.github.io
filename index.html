@@ -11,7 +11,9 @@
     <template id="card">
         <link href="./css/main.css" rel="stylesheet">
         <section class="card-section">
-            <img class="card-image"/>
+            <div class="card-image-container">
+                <img class="card-image"/>
+            </div>
             <slot name="card-title" class="card-title"></slot>
             <slot name="card-content" class="card-content"></slot>
         </section>
@@ -81,7 +83,17 @@
         </site-card>
         <site-card img="./img/erth.webp">
             <h2 slot="card-title" class="card-history"><span>ERTH Corp</span><span>2014 - 2017</span></h2>
-            <p slot="card-content">Work History and Responsibilities</p>
+            <div slot="card-content">
+                <div class="card-history-container">
+                    <h3 class="card-history"><span>Web Developer</span><span>Apr. 2014 - Dec. 2017</span></h3>
+                    <h4>Achievement Highlights</h4>
+                    <ul>
+                        <li>Independently developed an install client to eliminate the need for a developer to facilitate every install of the product and reducing the installation time from 2 hours to approximately 20 minutes.</li>
+                        <li>Introduced bundling and minification to the existing CSS and JavaScript reducing page file size by 50% and increasing page load times by 30%.</li>
+                        <li>Lead developer of front-end rewrite of the Vehicle History Report, converting server-side rendered pages to reusable JavaScript WebComponents and CSS. This created a more modern looking website and increased usability of the product.</li>
+                    </ul>
+                </div>
+            </div>
         </site-card>
         <site-card img="./img/3m.jpg">
             <h2 slot="card-title" class="card-history"><span>3M</span><span>2012 - 2014</span></h2>
