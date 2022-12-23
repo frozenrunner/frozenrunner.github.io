@@ -12,23 +12,80 @@
         <link href="./css/main.css" rel="stylesheet">
         <section class="card-section">
             <img class="card-image"/>
-            <h1 class="card-title"><slot name="card-title"></slot></h1>
-            <p class="card-content"><slot name="card-content"></slot></p>
+            <slot name="card-title" class="card-title"></slot>
+            <slot name="card-content" class="card-content"></slot>
         </section>
     </template>
-    <!-- <a href="shoetracker">Shoe Tracker</a> -->
     <main class="main">
         <site-card img="./img/profile.jpg">
-            <span slot="card-title">Michael Horlick</span>
-            <span slot="card-content">Some Content</span>
+            <h1 slot="card-title">Michael Horlick</h1>
+            <ul slot="card-content">
+                <li>Self directed software developer with experience in all stages of the software design lifecycle - from design to delivery of final product.</li>
+                <li>Robust understanding of JavaScript, C#, .NET, CSS and server side technologies.</li>
+                <li>Frequently experimenting with new technologies to enhance current skill-set.</li>
+                <li>Excellent troubleshooting and communication skills.</li>
+            </ul>
         </site-card>
         <site-card img="./img/cc.svg">
-            <span slot="card-title">Carfax Canada</span>
-            <span slot="card-content">Work History and Responsibilities</span>
+            <h2 slot="card-title" class="card-history"><span>Carfax Canada</span><span>2018 - Present</span></h2>
+            <div slot="card-content">
+                <div class="card-history-container">
+                    <h3 class="card-history"><span>Development Team Lead</span><span>Feb. 2021 - Present</span></h3>
+                    <h4>Key Responsibilities</h4>
+                    <ul>
+                        <li>Provide coaching and mentoring to the team, provide feedback to team members on performance, and monitor overall team performance.</li>
+                        <li>Work with stakeholders to identify technical requirements of software proposals.</li>
+                        <li>Provide good quality software development estimates for work.</li>
+                        <li>Deliver performance reviews and compensation recommendations for assigned team members.</li>
+                        <li>Act in a leadership capacity and work together with the rest of the development team to deliver excellent software solutions.</li>
+                        <li>Review associates development progress and provide feedback on annual goals and objectives.</li>
+                    </ul>
+                    <h4>Achievement Highlights</h4>
+                    <ul>
+                        <li>Lead developer on a self-contained web application library using VueJs. This increased the visibility of our products and improved brand awareness in the automotive space.</li>
+                        <li>Lead developer of a backend rewrite of the Vehicle History Report, converting data storage from SQL to primarily NoSQL. This made the product faster, increased uptime, and reduced complaint calls to our customer service department.</li>
+                        <li>Lead developer of front-end rewrite of the Vehicle History Report, converting server-side rendered pages to reusable JavaScript WebComponents and CSS. This created a more modern looking website and increased usability of the product.</li>
+                    </ul>
+                </div>
+                <div class="card-history-container">
+                    <h3 class="card-history"><span>Senior Developer</span><span>Sept. 2019 - Feb. 2021</span></h3>
+                    <h4>Key Responsibilities</h4>
+                    <ul>
+                        <li>Perform web development using C#, .NET and full stack frameworks for the front-end and middle-tier.</li>
+                        <li>Assist in new product adoption, update existing tools and frameworks.</li>
+                        <li>Create and enforce consistent software testing guidelines and documentation.</li>
+                        <li>Train, manage and provide guidance to junior and intermediate software development staff.</li>
+                        <li>Work with Project Managers, Product Owners, and other development teams to define technical solutions and perform technical analysis.</li>
+                    </ul>
+                    <h4>Achievement Highlights</h4>
+                    <ul>
+                        <li>Senior developer of a full stack rewrite of the Vehicle History Report, converting a monolithic application to microservices. This improved the scalability and responsiveness of the product while saving on overall infrastructure cost.</li>
+                        <li>Lead developer of a rewrite of a self-contained JavaScript widget. This resulted in a 30% reduction in load time, improved responsive design, and increased the number of customer integrations.</li>
+                    </ul>
+                </div>
+                <div class="card-history-container">
+                    <h3 class="card-history"><span>Intermediate Developer</span><span>Jan. 2018 - Sept. 2019</span></h3>
+                    <h4>Key Responsibilities</h4>
+                    <ul>
+                        <li>Work alongside product owners to develop and update existing applications using .Net Core.</li>
+                        <li>Update .Net Framework projects to .Net Core.</li>
+                        <li>Mentor junior developers in the structure and concepts of front-end development using modern frameworks and CSS preprocessors.</li>
+                        <li>Facilitate effective communication between technical and non-technical team members.</li>
+                    </ul>
+                    <h4>Achievement Highlights</h4>
+                    <ul>
+                        <li>Developed internal and external API endpoints. This helped to maintain and grow an existing partnership as well as creating common endpoints that can be used by other internally developed products.</li>
+                    </ul>
+                </div>
+            </div>
         </site-card>
         <site-card img="./img/erth.webp">
-            <span slot="card-title">ERTH Corp</span>
-            <span slot="card-content">Work History and Responsibilities</span>
+            <h2 slot="card-title" class="card-history"><span>ERTH Corp</span><span>2014 - 2017</span></h2>
+            <p slot="card-content">Work History and Responsibilities</p>
+        </site-card>
+        <site-card img="./img/3m.jpg">
+            <h2 slot="card-title" class="card-history"><span>3M</span><span>2012 - 2014</span></h2>
+            <p slot="card-content">Work History and Responsibilities</p>
         </site-card>
         <a href="/ShoeTracker">Shoe Tracker - VueJS</a>
     </main>

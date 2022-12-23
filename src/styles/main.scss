@@ -7,7 +7,7 @@
     --grey-5: #d6d6d6;
 }
 
-@import "fira";
+@import "notosans";
 
 * {
     box-sizing: border-box;
@@ -19,14 +19,19 @@ html {
 
 body {
     background-color: var(--grey-5);
+    color: rgba(0,0,0,.75);
     height: 100%;
     margin: 0 auto;
     max-width: 1024px;
     padding: 1rem;
 }
 
-h1, p {
+h1, h2, p, ul {
     margin: 0;
+}
+
+ul {
+    padding: 0 0 0 1rem;
 }
 
 .main {
