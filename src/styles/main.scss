@@ -69,7 +69,16 @@ ul {
 .profile-image-container {
     display: flex;
     justify-content: center;
-    grid-column: 4 / 6;
+    grid-column: 2 / 4;
+
+    @media (min-width: 768px) {
+        grid-column: 3 / 5;
+    }
+
+    @media (min-width: 1024px) {
+        grid-column: 4 / 6;
+    }
+
     .profile-image {
         clip-path: circle(50%);
         max-height: 200px;
@@ -79,7 +88,15 @@ ul {
 .profile-content {
     color: var(--metro-2);
     font-weight: 600;
-    grid-column: 3 / 7;
+    grid-column: 1 / -1;
+
+    @media (min-width: 768px) {
+        grid-column: 2 / 6;
+    }
+
+    @media (min-width: 1024px) {
+        grid-column: 3 / 7;
+    }
 }
 
 
