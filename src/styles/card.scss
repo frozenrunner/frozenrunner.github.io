@@ -3,46 +3,71 @@
     border: 1px solid var(--grey-3);
     border-radius: 8px;
     @include box-shadow(0);
-    display: grid;
-    gap: 1px;
-    grid-template-columns: minmax(5rem, 8rem) 6fr;
-    grid-template-rows: minmax(5rem, 8rem) 3fr;
-    padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: .5rem;
+
+    @media (min-width: 768px) {
+        flex-flow: row wrap;
+        padding: 1rem;
+    }
 
     .card-content {
-        border-left: 1px solid var(--grey-5);
         display: block;
-        grid-row-start: 2;
-        grid-column-start: 2;
         margin: -1px 0 0;
-        padding: 1rem 0 0 1rem;
+        padding: .5rem 0 0 .5rem;
+
+        @media (min-width: 768px) {
+            
+        }
     }
 }
 
 .card-image {
-    width: 4.6875em;
+    max-height: 4.6875em;
+
+    @media (min-width: 768px) {
+        width: 4.6875em;
+    }
 }
 
 .card-image-container {
     align-items: center;
+    border-bottom: 1px solid var(--grey-5);
     display: flex;
     justify-content: center;
+    min-height: 5.75em;
+    padding: 0 0 .5rem;
+
+    @media (min-width: 768px) {
+        flex: 1 1 100%;
+        padding: .5rem;
+        height: 5.75em;
+    }
 }
 
 .card-title {
     align-items: center;
-    border-bottom: 1px solid var(--grey-5);
-    border-left: 1px solid var(--grey-5);
     display: flex;
-    grid-column-start: 2;
-    grid-row-start: 1;
-    padding: 1rem 0 0 1rem;
+    padding: .5rem 0 0 .5rem;
+
+    @media (min-width: 768px) {
+        border-bottom: 1px solid var(--grey-5);
+        flex: 1 1 auto;
+        height: 5.75em;
+    }
 }
 
 .card-history {
+    align-items: center;
     display: flex;
     flex: 1 1 auto;
+    flex-flow: column nowrap;
     justify-content: space-between;
+
+    @media (min-width: 1024px) {
+        flex-flow: row wrap;
+    }
 }
 
 .card-history-container {
@@ -51,5 +76,42 @@
 
     &:not(:last-child) {
         border-bottom: 1px solid var(--grey-5);
+    }
+}
+
+site-card {
+    grid-column: span 4;
+
+    @media (min-width: 768px) {
+        grid-column: span 3;
+    }
+
+    @media (min-width: 1024px) {
+        grid-column: span 4;
+    }
+
+    &.card-cfc {
+        grid-row: span 4;
+    }
+}
+
+.section-title {
+    grid-column: 1 / -1;
+}
+
+.card-profile {
+    h1 {
+        color: rgba(0,0,0,.75);
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.card-link {
+    display: block;
+    max-width: 100%;
+
+    img {
+        max-width: 100%;
     }
 }

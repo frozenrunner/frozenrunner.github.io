@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="Logo.svg"
+   id="svg320"
+   version="1.1"
+   viewBox="0 0 49.312103 26"
+   height="26"
+   width="49.312103">
+  <metadata
+     id="metadata326">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Trifecta 3M 001 Lockup CMYK Pos</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs324" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg320"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="1912"
+     inkscape:cy="14"
+     inkscape:cx="79.5"
+     inkscape:zoom="6.5974843"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     id="namedview322"
+     inkscape:window-height="1377"
+     inkscape:window-width="2560"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <title
+     id="title263">Trifecta 3M 001 Lockup CMYK Pos</title>
+  <g
+     fill-rule="evenodd"
+     fill="none"
+     stroke-width="1"
+     stroke="none"
+     id="Page-1">
+    <g
+       fill-rule="nonzero"
+       id="Trifecta-3M-001-Lockup-CMYK-Pos">
+      <path
+         fill="#ff0000"
+         id="Shape"
+         d="M 38.839251,0.57806045 35.278404,15.117768 31.705907,0.57806045 H 21.229172 V 5.9466876 C 19.971032,1.2481648 15.532594,0.06769023 11.42034,0.00145898 6.4110781,-0.06477226 1.1571782,2.1130671 0.96302081,8.7595677 H 7.8944408 c 0,-2.0064172 1.5338436,-3.1557242 3.2618442,-3.1284525 2.1202,-0.015584 3.098753,0.8921739 3.149234,2.3103018 -0.07378,1.2272261 -0.796046,2.084336 -3.133701,2.084336 H 8.841929 v 4.82709 h 2.116316 c 1.199893,0 2.87353,0.65452 2.939543,2.372637 0.08155,2.045377 -1.339686,2.949238 -3.08322,2.964822 C 7.6964002,20.077319 7.1915909,17.669619 7.1915909,15.604762 H 0 c 0.03106519,1.390856 -0.31065187,10.460642 10.966011,10.39441 5.40146,0.05065 9.171997,-2.228486 10.278694,-5.368627 v 4.811506 H 28.3431 V 9.7608284 l 3.836551,15.6851186 h 6.201388 L 42.233122,9.7764122 V 25.46153 h 7.07898 V 0.57806045 Z M 21.248588,15.082704 c -0.881475,-1.834995 -2.124082,-2.637562 -2.826932,-2.890799 1.46783,-0.654521 2.240577,-1.542799 2.826932,-3.3154586 z" />
+    </g>
+  </g>
+</svg>

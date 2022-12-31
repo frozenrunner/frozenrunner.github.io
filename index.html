@@ -19,18 +19,15 @@
         </section>
     </template>
     <main class="main">
-        <h1>Who am I?</h1>
-        <site-card img="./img/profile.jpg">
-            <h1 slot="card-title">Michael Horlick</h1>
-            <ul slot="card-content">
-                <li>Self directed software developer with experience in all stages of the software design lifecycle - from design to delivery of final product.</li>
-                <li>Robust understanding of JavaScript, C#, .NET, CSS and server side technologies.</li>
-                <li>Frequently experimenting with new technologies to enhance current skill-set.</li>
-                <li>Excellent troubleshooting and communication skills.</li>
-            </ul>
-        </site-card>
-        <h1>What have I done?</h1>
-        <site-card img="./img/cc.svg">
+        <h1 class="section-title profile-title">Michael Horlick</h1>
+        <div class="profile-image-container">
+            <img class="profile-image" src="./img/profile.jpg"/>
+        </div>
+        <p class="profile-content">
+            Senior Software Development Team Lead with over nine years of professional experience developing and maintaining web-based applications. Experienced with designing front-end code and back-end systems. Skilled in full stack development and with a wide variety of frameworks including Vue, JavaScript, and Cascading Style Sheets CSS/CSS. Good people skills and comfortable working alone or as part of a team environment.
+        </p>
+        <h1 class="section-title">Where have I been?</h1>
+        <site-card class="card-cfc" img="./img/cc.svg">
             <h2 slot="card-title" class="card-history"><span>Carfax Canada</span><span>2018 - Present</span></h2>
             <div slot="card-content">
                 <div class="card-history-container">
@@ -103,7 +100,7 @@
                 </div>
             </div>
         </site-card>
-        <site-card img="./img/3m.jpg">
+        <site-card img="./img/3m.png">
             <h2 slot="card-title" class="card-history"><span>3M</span><span>2012 - 2014</span></h2>
             <div slot="card-content">
                 <div class="card-history-container">
@@ -122,9 +119,15 @@
                 </div>
             </div>
         </site-card>
-        <h1>Examples of things I've played around with</h1>
-        <a href="/ShoeTracker">Shoe Tracker - VueJS</a>
-        <a href="/Picross">Web Assemly - VueJS</a>
+        <h1 class="section-title">Experiments and Learning</h1>
+        <site-card>
+            <h2 slot="card-title"><span>Shoe Tracker - VueJS</span></h2>
+            <a slot="card-content" href="/ShoeTracker" class="card-link"><img src="./img/shoetracker-thumbnail.png"/></a>
+        </site-card>
+        <site-card>
+            <h2 slot="card-title"><span>Web Assemly - VueJS</span></h2>
+            <a slot="card-content" href="/Picross" class="card-link"><img src="./img/picross-thumbnail.png"/></a>
+        </site-card>
     </main>
 </body>
 </html>

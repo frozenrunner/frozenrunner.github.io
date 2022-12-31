@@ -5,6 +5,17 @@
     --grey-3: #adadad;
     --grey-4: #c2c2c2;
     --grey-5: #d6d6d6;
+
+    --green-1: #68af70;
+    --green-2: #7ebd88;
+    --green-3: #93cb9f;
+    --green-4: #a9dab7;
+    --green-5: #bee8cf;
+
+    --metro-1: #081f2c;
+    --metro-2: #3cdbc0;
+    --metro-3: #f1be48;
+    --metro-4: #e03c31;
 }
 
 @import "notosans";
@@ -13,17 +24,17 @@
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
+
 
 body {
-    background-color: var(--grey-5);
+    background: var(--metro-1);
     color: rgba(0,0,0,.75);
     height: 100%;
     margin: 0 auto;
-    max-width: 1024px;
-    padding: 1rem;
+}
+
+h1 {
+    color: var(--metro-2);
 }
 
 h1, h2, p, ul {
@@ -35,9 +46,40 @@ ul {
 }
 
 .main {
-    display: flex;
-    flex-flow: column nowrap;
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(4, 1fr);
     height: 100%;
+    padding: .5rem;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(6, 1fr);
+        padding: 1rem;
+    }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+.profile-title {
+    text-align: center;;
+}
+
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    grid-column: 4 / 6;
+    .profile-image {
+        clip-path: circle(50%);
+        max-height: 200px;
+    }
+}
+
+.profile-content {
+    color: var(--metro-2);
+    font-weight: 600;
+    grid-column: 3 / 7;
 }
 
 
