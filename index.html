@@ -19,14 +19,36 @@
         </section>
     </template>
     <main class="main">
-        <h1 class="section-title profile-title">Michael Horlick</h1>
-        <div class="profile-image-container">
-            <img class="profile-image" src="./img/profile.jpg"/>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#workHistory">Work</a>
+            <a href="#samples">Experiments</a>
+        </nav>
+        <div class="intro-container">
+            <h1>Michael Horlick</h1>
+            <h2>Web Developer</h2>
+            <p class="profile-content">I'm a software developer with a passion for frontend development and all things web.</p>
+            <p class="profile-content">I'm currently a Development Team Lead at <a class="link-employer" href="https://www.carfax.ca">CARFAX Canada</a></p>
         </div>
-        <p class="profile-content">
-            Senior Software Development Team Lead with over nine years of professional experience developing and maintaining web-based applications. Experienced with designing front-end code and back-end systems. Skilled in full stack development and with a wide variety of frameworks including Vue, JavaScript, and Cascading Style Sheets CSS/CSS. Good people skills and comfortable working alone or as part of a team environment.
-        </p>
-        <h1 class="section-title">Where have I been?</h1>
+        <div id="about" class="about-container">
+            <h2 class="about-title">About me</h2>
+            <div class="profile-image-container">
+                <img class="profile-image" src="./img/profile.jpg"/>
+            </div>
+            <p class="profile-content">
+                Hi, I'm Michael. I'm a Web Developer experienced with designing frontend code and back-end systems.
+                I like making things on the web that people enjoy using. I am passionate about frontend development and enjoy experimenting with the latest in web technology.
+            </p>
+            <p class="profile-content">
+                Lately I've been experimenting with:
+            </p>
+            <ul>
+                <li><span>Web Assembly</span></li>
+                <li><span>Vue.js 3</span></li>
+                <li><span>Node.js</span></li>
+            </ul>
+        </div>
+        <h2 id="workHistory" class="section-title">Where have I been?</h2>
         <site-card class="card-cfc" img="./img/cc.svg">
             <h2 slot="card-title" class="card-history"><span>Carfax Canada</span><span>2018 - Present</span></h2>
             <div slot="card-content">
@@ -43,16 +65,16 @@
                     </ul>
                     <h4>Achievement Highlights</h4>
                     <ul>
-                        <li>Lead developer on a self-contained web application library using VueJs. This increased the visibility of our products and improved brand awareness in the automotive space.</li>
+                        <li>Lead developer on a self-contained web application library using Vue.js. This increased the visibility of our products and improved brand awareness in the automotive space.</li>
                         <li>Lead developer of a backend rewrite of the Vehicle History Report, converting data storage from SQL to primarily NoSQL. This made the product faster, increased uptime, and reduced complaint calls to our customer service department.</li>
-                        <li>Lead developer of front-end rewrite of the Vehicle History Report, converting server-side rendered pages to reusable JavaScript WebComponents and CSS. This created a more modern looking website and increased usability of the product.</li>
+                        <li>Lead developer of frontend rewrite of the Vehicle History Report, converting server-side rendered pages to reusable JavaScript WebComponents and CSS. This created a more modern looking website and increased usability of the product.</li>
                     </ul>
                 </div>
                 <div class="card-history-container">
                     <h3 class="card-history"><span>Senior Developer</span><span>Sept. 2019 - Feb. 2021</span></h3>
                     <h4>Key Responsibilities</h4>
                     <ul>
-                        <li>Perform web development using C#, .NET and full stack frameworks for the front-end and middle-tier.</li>
+                        <li>Perform web development using C#, .NET and full stack frameworks for the frontend and middle-tier.</li>
                         <li>Assist in new product adoption, update existing tools and frameworks.</li>
                         <li>Create and enforce consistent software testing guidelines and documentation.</li>
                         <li>Train, manage and provide guidance to junior and intermediate software development staff.</li>
@@ -70,7 +92,7 @@
                     <ul>
                         <li>Work alongside product owners to develop and update existing applications using .Net Core.</li>
                         <li>Update .Net Framework projects to .Net Core.</li>
-                        <li>Mentor junior developers in the structure and concepts of front-end development using modern frameworks and CSS preprocessors.</li>
+                        <li>Mentor junior developers in the structure and concepts of frontend development using modern frameworks and CSS preprocessors.</li>
                         <li>Facilitate effective communication between technical and non-technical team members.</li>
                     </ul>
                     <h4>Achievement Highlights</h4>
@@ -87,7 +109,7 @@
                     <h3 class="card-history"><span>Web Developer</span><span>Apr. 2014 - Dec. 2017</span></h3>
                     <h4>Key Responsibilities</h4>
                     <ul>
-                        <li>Perform web development using C#, .NET and full stack frameworks for the front-end and middle-tier.</li>
+                        <li>Perform web development using C#, .NET and full stack frameworks for the frontend and middle-tier.</li>
                         <li>Provide customer support and technical expertise during software installations.</li>
                         <li>Follow software testing guidelines and documentation.</li>
                     </ul>
@@ -95,7 +117,7 @@
                     <ul>
                         <li>Independently developed an install client to eliminate the need for a developer to facilitate every install of the product and reducing the installation time from 2 hours to approximately 20 minutes.</li>
                         <li>Introduced bundling and minification to the existing CSS and JavaScript reducing page file size by 50% and increasing page load times by 30%.</li>
-                        <li>Lead developer of front-end rewrite of the Vehicle History Report, converting server-side rendered pages to reusable JavaScript WebComponents and CSS. This created a more modern looking website and increased usability of the product.</li>
+                        <li>Lead developer of frontend rewrite of the Vehicle History Report, converting server-side rendered pages to reusable JavaScript WebComponents and CSS. This created a more modern looking website and increased usability of the product.</li>
                     </ul>
                 </div>
             </div>
@@ -119,14 +141,18 @@
                 </div>
             </div>
         </site-card>
-        <h1 class="section-title">Experiments and Learning</h1>
+        <h2 id="samples" class="section-title">Experiments and Learning</h2>
         <site-card>
-            <h2 slot="card-title"><span>Shoe Tracker - VueJS</span></h2>
+            <h2 slot="card-title"><span>Shoe Tracker - Vue.js</span></h2>
             <a slot="card-content" href="/ShoeTracker" class="card-link"><img src="./img/shoetracker-thumbnail.png"/></a>
         </site-card>
-        <site-card>
-            <h2 slot="card-title"><span>Web Assemly - VueJS</span></h2>
+        <site-card class="picross">
+            <h2 slot="card-title"><span>Web Assemly - Vue.js</span></h2>
             <a slot="card-content" href="/Picross" class="card-link"><img src="./img/picross-thumbnail.png"/></a>
+        </site-card>
+        <site-card>
+            <h2 slot="card-title"><span>Website Refactor Tool - NodeJS</span></h2>
+            <a slot="card-content" href="https://github.com/frozenrunner/Website.RegressionCompare" class="card-link"><img src="./img/website-refactor-thumbnail.png"/></a>
         </site-card>
     </main>
 </body>

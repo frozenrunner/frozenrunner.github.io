@@ -8,7 +8,6 @@
     padding: .5rem;
 
     @media (min-width: 768px) {
-        flex-flow: row wrap;
         padding: 1rem;
     }
 
@@ -93,10 +92,10 @@ site-card {
     &.card-cfc {
         grid-row: span 4;
     }
-}
 
-.section-title {
-    grid-column: 1 / -1;
+    &.picross {
+        grid-row: span 2;
+    }
 }
 
 .card-profile {
