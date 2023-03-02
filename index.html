@@ -20,33 +20,36 @@
     </template>
     <main class="main">
         <nav>
-            <a href="#about">About</a>
             <a href="#workHistory">Work</a>
             <a href="#samples">Experiments</a>
         </nav>
         <div class="intro-container">
-            <h1>Michael Horlick</h1>
-            <h2>Web Developer</h2>
-            <p class="profile-content">I'm a software developer with a passion for frontend development and all things web.</p>
-            <p class="profile-content">I'm currently a Development Team Lead at <a class="link-employer" href="https://www.carfax.ca">CARFAX Canada</a></p>
-        </div>
-        <div id="about" class="about-container">
-            <h2 class="about-title">About me</h2>
-            <div class="profile-image-container">
-                <img class="profile-image" src="./img/profile.jpg"/>
+            <div class="card-container">
+                <div class="title-container">
+                    <div class="profile-image-container">
+                        <img class="profile-image" src="./img/profile.jpg"/>
+                    </div>
+                    <div>
+                        <h1>Michael Horlick</h1>
+                        <h2>Web Developer</h2>
+                    </div>
+                </div>
+                <p class="profile-content">
+                    Hi, I'm Michael. I'm a Web Developer experienced with designing frontend code and back-end systems.
+                    <br/>
+                    I like making things on the web that people enjoy using. I am passionate about frontend development and enjoy experimenting with the latest in web technology.
+                </p>
+                <p class="profile-content">I'm currently a Development Team Lead at <a class="link-employer" href="https://www.carfax.ca">CARFAX Canada</a></p>
+                <p class="profile-content recent-list">
+                    Lately I've been experimenting with:
+                </p>
+                <ul>
+                    <li><span>Web Assembly</span></li>
+                    <li><span>Vue.js 3</span></li>
+                    <li><span>Node.js</span></li>
+                    <li><span>React</span></li>
+                </ul>
             </div>
-            <p class="profile-content">
-                Hi, I'm Michael. I'm a Web Developer experienced with designing frontend code and back-end systems.
-                I like making things on the web that people enjoy using. I am passionate about frontend development and enjoy experimenting with the latest in web technology.
-            </p>
-            <p class="profile-content">
-                Lately I've been experimenting with:
-            </p>
-            <ul>
-                <li><span>Web Assembly</span></li>
-                <li><span>Vue.js 3</span></li>
-                <li><span>Node.js</span></li>
-            </ul>
         </div>
         <h2 id="workHistory" class="section-title">Where have I been?</h2>
         <site-card class="card-cfc" img="./img/cc.svg">
@@ -146,13 +149,17 @@
             <h2 slot="card-title"><span>Shoe Tracker - Vue.js</span></h2>
             <a slot="card-content" href="/ShoeTracker" class="card-link"><img src="./img/shoetracker-thumbnail.png"/></a>
         </site-card>
-        <site-card class="picross">
+        <site-card>
             <h2 slot="card-title"><span>Web Assemly - Vue.js</span></h2>
             <a slot="card-content" href="/Picross" class="card-link"><img src="./img/picross-thumbnail.png"/></a>
         </site-card>
         <site-card>
             <h2 slot="card-title"><span>Website Refactor Tool - NodeJS</span></h2>
             <a slot="card-content" href="https://github.com/frozenrunner/Website.RegressionCompare" class="card-link"><img src="./img/website-refactor-thumbnail.png"/></a>
+        </site-card>
+        <site-card>
+            <h2 slot="card-title"><span>Match Game - React</span></h2>
+            <a slot="card-content" href="/MatchGame" class="card-link"><img src="./img/matchgame-thumbnail.png"/></a>
         </site-card>
     </main>
 </body>
