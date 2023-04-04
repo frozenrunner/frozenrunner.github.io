@@ -11,6 +11,10 @@ export class Card extends HTMLElement {
         const imgContainer = clonedNode.querySelector(".card-image-container");
         const img = clonedNode.querySelector(".card-image")
 
+        if (this.classList.contains("wide-logo")) {
+            img.classList.add("wide-logo");
+        }
+
         if (this.hasAttribute("img")) {
             img.src = this.getAttribute("img");
         } else {

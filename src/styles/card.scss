@@ -24,6 +24,11 @@
     @media (min-width: 768px) {
         width: 4.6875em;
     }
+
+    &.wide-logo {
+        height: 2.5em;
+        width: auto;
+    }
 }
 
 .card-image-container {
